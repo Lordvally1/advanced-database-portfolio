@@ -3,7 +3,8 @@ Student Name: [Obiora Valentine Ezekaka]
 Matriculation Number: [301809869]
 Degree Program: Master of Information Technology (MIT)   
 Academic Session: 2026/2027 Academic Session   
-Course Code: MIT8103 — Advanced Database Systems   
+Course Code: MIT8103 — Advanced Database Systems  
+**GitHub Repository URL:** [https://github.com/Ezekaka_Obiora/advanced-database-portfolio] 
 1. Case Study OverviewPayPulse is a digital wallet and peer-to-peer (P2P) financial platform designed for high-throughput transactional operations. The system supports core functions including user onboarding (KYC), wallet creation, fund deposits, atomic wallet-to-wallet transfers, withdrawals, and real-time transaction logging.   Target Users: Customers, System Administrators, Compliance Officers, External Payment Gateways.   Core Requirements: Absolute transactional integrity (ACID guarantees) for ledger balances, sub-second activity updates for mobile users, and distributed high availability.   
 2. Portfolio Project StructurePlaintextadvanced-database-portfolio/
 │

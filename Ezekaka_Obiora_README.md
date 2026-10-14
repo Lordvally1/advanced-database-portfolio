@@ -33,4 +33,7 @@ Course Code: MIT8103 — Advanced Database Systems
 Run Query Optimisation Tests:Bashpsql -U postgres -d paypulse -f portfolio-2-query-optimisation/optimisation.sql
 Execute Transaction Lock Simulation:Bashpsql -U postgres -d paypulse -f portfolio-3-transactions-concurrency/atomic_transfer.sql
 Execute NoSQL Pipeline:Bashpython portfolio-4-nosql/nosql_implementation.py
-5. Individual Technical ReflectionDeveloping this database portfolio provided practical insights into balancing relational data consistency with NoSQL performance. Index tuning demonstrated how query execution engines process logical trees into physical disk block reads, while concurrency simulations underlined the importance of explicit row locking in transaction processing.  
+5. Individual Technical ReflectionDeveloping this database portfolio provided practical insights into balancing relational data consistency with NoSQL performance. Index tuning demonstrated how query execution engines process logical trees into physical disk block reads, while concurrency simulations underlined the importance of explicit row locking in transaction processing. 
+6. AI Use DeclarationTool Used: Gemini   
+Scope: Assisting in query test design, initial schema boilerplate generation, and documentation formatting.   
+Verification: All database schemas, SQL statements, indexes, Python scripts, and performance plans were manually executed and tested in local database instances 

@@ -1,0 +1,27 @@
+{
+  "customer_id": 101,
+  "full_name": "Ada Okafor",
+  "email": "ada.okafor@example.com",
+  "wallet_id": 1,
+  "wallet_status": "ACTIVE",
+  "recent_transactions": [
+    {
+      "transaction_id": 9001,
+      "type": "TRANSFER",
+      "amount": 2500.00,
+      "counterparty": "Chinedu Adebayo",
+      "status": "SUCCESS",
+      "timestamp": "2026-10-13T12:30:00Z"
+    },
+    {
+      "transaction_id": 9002,
+      "type": "DEPOSIT",
+      "amount": 15000.00,
+      "counterparty": "Bank Transfer",
+      "status": "SUCCESS",
+      "timestamp": "2026-10-13T13:10:00Z"
+    }
+  ],
+  "feed_limit": 10,
+  "last_updated": "2026-10-13T13:11:00Z"
+}

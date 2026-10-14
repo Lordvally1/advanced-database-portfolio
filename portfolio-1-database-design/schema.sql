@@ -1,5 +1,5 @@
 CREATE TABLE Customers (
-    customer_id SERIAL PRIMARY KEY,
+    customer_id INTEGER PRIMARY KEY AUTOINCREMENT,
     full_name VARCHAR(100) NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL,
     phone_number VARCHAR(20) UNIQUE NOT NULL,
@@ -7,7 +7,7 @@ CREATE TABLE Customers (
 );
 
 CREATE TABLE Wallets (
-    wallet_id SERIAL PRIMARY KEY,
+    wallet_id INTEGER PRIMARY KEY AUTOINCREMENT,
     customer_id INT NOT NULL REFERENCES Customers(customer_id) ON DELETE CASCADE,
     account_number VARCHAR(10) UNIQUE NOT NULL,
     balance NUMERIC(15, 2) NOT NULL DEFAULT 0.00 CHECK (balance >= 0.00),
@@ -17,7 +17,7 @@ CREATE TABLE Wallets (
 );
 
 CREATE TABLE Transactions (
-    transaction_id SERIAL PRIMARY KEY,
+    transaction_id INTEGER PRIMARY KEY AUTOINCREMENT,
     sender_wallet_id INT NOT NULL REFERENCES Wallets(wallet_id),
     receiver_wallet_id INT NOT NULL REFERENCES Wallets(wallet_id),
     amount NUMERIC(15, 2) NOT NULL CHECK (amount > 0.00),
@@ -28,9 +28,9 @@ CREATE TABLE Transactions (
 );
 
 CREATE TABLE AuditLogs (
-    log_id SERIAL PRIMARY KEY,
+    log_id INTEGER PRIMARY KEY AUTOINCREMENT,
     transaction_id INT REFERENCES Transactions(transaction_id) ON DELETE SET NULL,
     action_performed VARCHAR(255) NOT NULL,
     ip_address VARCHAR(45),
     logged_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-)
+);
